@@ -903,15 +903,20 @@ textarea::placeholder {
 @media (max-width: 768px) {
   .skills-section {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers the column */
+    text-align: center;  /* Ensures text and spans align center */
   }
 
   .skill-group {
+    width: 100%;
+    max-width: 100%;
     display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontally center each group */
-  max-width: 320px;
-  width: 100%;
+    flex-direction: column;
+    align-items: center; /* Ensures each group is centered */
+  }
 
+  .skills-list {
+    justify-content: center; /* Center badges/spans */
   }
 }
+
