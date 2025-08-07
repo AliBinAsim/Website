@@ -440,8 +440,12 @@ h3{
   background: #29b9aa; /* blue */
 }
 .project-box.EDA::after {
-  background: #b92946; /* blue */
+  background: #000000; /* blue */
 }
+.project-box.india::after {
+  background: #24892b; /* orange */
+}
+
 
 /* Make content appear above the background overlay */
 .project-box * {
@@ -903,20 +907,44 @@ textarea::placeholder {
 @media (max-width: 768px) {
   .skills-section {
     flex-direction: column;
-    align-items: center; /* Centers the column */
-    text-align: center;  /* Ensures text and spans align center */
+    align-items: center;
   }
 
   .skill-group {
-    width: 100%;
-    max-width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Ensures each group is centered */
-  }
+  flex-direction: column;
+  align-items: center; /* Horizontally center each group */
+  max-width: 320px;
+  width: 100%;
 
-  .skills-list {
-    justify-content: center; /* Center badges/spans */
   }
 }
+.about-btnd1 {
+  margin-top: 10px;
+  text-align: center;
+}
 
+.btnd1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin: 0; /* Remove spacing that pushes it down */
+}
+
+.btnd1:hover {
+  background-color: rgb(78, 54, 173);
+  color: rgb(255, 255, 255);
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
